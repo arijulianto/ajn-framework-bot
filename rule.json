@@ -1,0 +1,20 @@
+[
+  {
+    "pattern": "/^(start)$/i",
+    "callback": "",
+    "prepare_text": "",
+    "jenis": "ask",
+    "jawaban": "Halo {{NAMA}} ({{ID}}). Selamat datang di {{NAMA_BOT}}",
+    "format": "",
+    "aktif": 1
+  },
+  {
+    "pattern": "/(selamat )(pagi|siang|sore|malam)/i",
+    "callback": "sapa_waktu",
+    "prepare_text": "",
+    "jenis": "ask",
+    "jawaban": "",
+    "format": "",
+    "aktif": 1
+  }
+]

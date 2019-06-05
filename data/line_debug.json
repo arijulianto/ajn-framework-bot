@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "type": "message",
+      "replyToken": "randomtokenserver",
+      "source": {
+        "userId": "uuid_user",
+        "type": "user"
+      },
+      "timestamp": 1555987132526,
+      "message": {
+        "type": "text",
+        "id": "12345054321",
+        "text": "halo"
+      }
+    }
+  ],
+  "destination": "randomhashserver"
+}

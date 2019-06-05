@@ -1,0 +1,23 @@
+{
+  "update_id": 1234567890,
+  "message": {
+    "message_id": 1234,
+    "from": {
+      "id": 12345054321,
+      "is_bot": false,
+      "first_name": "Nama1",
+      "last_name": "Nama2",
+      "username": "username",
+      "language_code": "id"
+    },
+    "chat": {
+      "id": 54321012345,
+      "first_name": "Nama1",
+      "last_name": "Nama2",
+      "username": "username",
+      "type": "private"
+    },
+    "date": 1557896006,
+    "text": "halo"
+  }
+}
