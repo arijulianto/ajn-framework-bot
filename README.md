@@ -75,7 +75,7 @@ Di AJN Framework Bot, sudah tersedia beberapa environment variabel yang dapat la
 - `$app` : object inti aplikasi, beberapa method yang tersedia `$app->send($isi_chat_balasan, $options)` untuk mengirim chat balasan ke user dengan parameter `$options` bersifat optional, `$app->user` untuk mengambil object informasi user
 - `$chat` : mengambil raw data chat yang dikirim user
 
-**Bot Engine 2 (data)**
+**Bot Engine 2 (data - khusus mode `rule`)**
 
 - `{{WAKTU}}` - nama waktu sesuai jam (pagi, siang, sore, malam)
 - `{{JAM}}` - jam (0, 9, 22, dll)
