@@ -148,10 +148,9 @@ class AJNBot{
 						$this->reply_to = $this->chat['message']['message_id'];
 					}
 					if($role['jenis']=='ask'){$this->reply_to = $this->chat['message']['message_id'];}
-					if($role['prepare_text'] && $this->platform=='telegram'){
-						$funcHelper = $func.'Prepare';
-						if($funcHelper && method_exists($this->engine, $funcHelper)){
-							$cek = call_user_func([$this->engine, $funcHelper], $text);
+					if($role['prepare_text'] && ($this->platform=='telegram' || $this->platform=='messenger')){
+						if(isset($func) && method_exists($this->engine, $func)){
+							$cek = call_user_func([$this->engine, $func], $text);
 							if($cek){
 								$this->send($role['prepare_text'], ['reply_to'=>$this->reply_to]);$this->reply_to = null;
 							}
@@ -164,7 +163,7 @@ class AJNBot{
 				}
 			}
 		
-			if($func){
+			if(isset($func)){
 				$exec = $this->engine->$func($text);
 				$output = $exec;
 				if(is_array($output)){
@@ -240,14 +239,7 @@ class AJNBot{
 		$bot = $this->$platform;
 
 		// user info
-		if($platform=='telegram'){
-			$perintah = str_replace('{{NAMA}}', $this->user['name'], $perintah);
-		}elseif($platform=='line'){
-			$perintah = str_replace('{{NAMA}}', $this->user['name'], $perintah);
-		}elseif($platform=='messenger'){
-			$perintah = str_replace('{{NAMA}}', $this->user['name'], $perintah);
-		}
-
+		$perintah = str_replace('{{NAMA}}', $this->user['name'], $perintah);
 		$perintah = str_replace('{{ID}}', $this->user['id'], $perintah);
 		$perintah = str_replace('{{USERNAME}}', $this->chat['message']['from']['username'], $perintah);
 		$perintah = str_replace('{{NAMA_BOT}}', $bot['name'], $perintah);
