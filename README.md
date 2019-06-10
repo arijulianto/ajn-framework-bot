@@ -29,7 +29,7 @@ Mode Manual merupakan mode dimana eksekusi terhadap perintah dilakukan secara ma
 
 ```
 if($text=='start'){
-	$app->send('Selamat Datang {{NAMA}}');
+	$app->send('Selamat Datang');
 }elseif($text=='help'){
 	$app->send("Daftar Perintah tersedia:\n/start - untuk memulai\n/help - untuk bantuan daftar perintah");
 }else{
