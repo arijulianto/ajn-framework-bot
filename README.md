@@ -100,3 +100,9 @@ Di AJN Framework Bot, sudah tersedia beberapa environment variabel yang dapat la
 - `{{NAMA_BOT}}` - nama bot (sesuai platform)
 - `{{PLATFORM}}` - nama platform aktif
 - `{{PERINTAH}}` - kata pertama dari chat user
+
+## Dokumentasi Lengkap: menyusul (sedang dirancang)
+
+## Bantuan
+* Untuk pertanyaan, permasalahan dan masukan atau saran silahkan buka tiket [issue](https://github.com/arijulianto/ajn-framework-bot/issues) insya Allah dibantu
+* Untuk sementara tidak menerima pertanyaan via email dan kontak pribadi lainnya
